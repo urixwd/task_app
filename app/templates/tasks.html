@@ -1,6 +1,9 @@
 <h3>tasks controller</h3>
 <div ng-controller="TasksController">
-    {{ data.length }} tasks
+    <div>{{ data.length }} tasks</div>
+    <div>service: {{ tasks_ser.data }}</div>
+    input: <input ng-model="tasks_ser.data" />
+    <p>&nbsp;</p>
     <div>
         <div ng-repeat="task in data">
             <task-line task="task"></task-line>
