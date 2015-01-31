@@ -1,3 +1,3 @@
-/**
- * Created by ASUS on 31/01/2015.
- */
+app.service('tasks', ['$rootScope', function($rootScope){
+
+}]);
