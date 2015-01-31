@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="task_app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1> app </h1>
+    <div ng-view></div>
+    <div ng-controller="tasks">@{{ data }}@</div>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/tasksController.js"></script>
+</body>
+</html>
