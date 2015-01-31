@@ -2,10 +2,10 @@
 <div ng-controller="TasksController">
     <div>{{ data.length }} tasks</div>
     <div>service: {{ tasks_ser.data }}</div>
-    input: <input ng-model="tasks_ser.data" />
+    name filter: <input ng-model="tasks_ser.data" />
     <p>&nbsp;</p>
     <div>
-        <div ng-repeat="task in data">
+        <div ng-repeat="task in data | filter:{ name: tasks_ser.data } | orderBy:'-name'">
             <task-line task="task"></task-line>
         </div>
     </div>
