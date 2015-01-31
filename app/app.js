@@ -8,11 +8,11 @@ var app = angular.module("task_app", ['ngRoute'])
     }])
     .config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
         $routeProvider
-            .when('/', {
+            .when('/tasks', {
                 templateUrl: 'templates/tasks.html',
                 controller: 'TasksController'
             })
-            .when('/default', {
+            .when('/', {
                 templateUrl: 'templates/default.html',
                 controller: 'Welcome'
             })

@@ -3,8 +3,7 @@
     {{ data.length }} tasks
     <div>
         <div ng-repeat="task in data">
-            <span>{{ task.name }}</span>
-            <span>{{ task.desc }}</span>
+            <task-line task="task"></task-line>
         </div>
     </div>
 </div>
